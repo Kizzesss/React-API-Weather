@@ -2,14 +2,16 @@ import React from "react";
 
 const WeatherForm = props => (
     <div className="card card-body">
-        <form action="">
+        <form onSubmit={props.getWeather}>
             <div className="form-group">
-                <input type="text" className="form-control" name="city" placeholder="La ciudad crack" autofocus/>
+                <input type="text" className="form-control" name="city" placeholder="La ciudad crack" autoFocus/>
             </div>
             <div className="form-group">
                 <input type="text" className="form-control" name="country" placeholder="El pais crack" />
             </div>
-            <button className="btn btn-success btn-block">Muestrame el clima crack</button>
+            <button className="btn btn-success btn-block">
+                Muestrame el clima crack
+            </button>
         </form>        
     </div>
 );
